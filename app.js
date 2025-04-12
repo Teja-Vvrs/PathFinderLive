@@ -45,5 +45,5 @@ app.get("/", function(req, res) {
 });
 
 server.listen(5000, () => {
-    console.log('Server is running on http://localhost:5000');
+    console.log('Server is running on 5000');
 });
