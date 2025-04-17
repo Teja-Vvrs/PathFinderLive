@@ -4,6 +4,7 @@ const app = express();
 const http = require("http");
 const path = require("path");
 const socketio = require("socket.io");
+const port=5000;
 
 const server = http.createServer(app);
 const io = socketio(server);
@@ -44,6 +45,6 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-server.listen(5000, () => {
+server.listen(port, () => {
     console.log('Server is running on 5000');
 });
